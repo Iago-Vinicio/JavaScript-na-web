@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+       
+       
+       
+       
+       function exibeNomeEstudante(nome, nota, semestre){
+            alert(nome)
+        }
+
+        const nome = 'Jonas '
+        exibeNomeEstudante(`${nome}`)
+
+        exibeNomeEstudante("Jonas")
+
+
+        function formataInfoEstudante(nome, nota) {
+            
+            const info = `
+            ==============================
+            Estudante: ${nome}
+
+            Sua nota: ${nota}
+            ==============================
+            `
+
+            return info
+        }
+
+        const infoEstudante = formataInfoEstudante('JONAS', 7.6)
+
+        alert(infoEstudante)
+
+
+        function calcularMedia(n1, n2, n3, n4){
+            const media = (n1+n2+n3+n4)/4
+
+            return media
+        }
+
+        const resultaMedia = calcularMedia(10, 5, 7.8, 4)
+
+        alert(resultaMedia)
+
+        alert(calcularMedia(5, 7, 2, 4))
+
+
+        // Função Expressão (Anômnima)
+        const calcularMedia = function (n1, n2, n3, n4) {
+            return (n1+n2+n3+n4)/4
+        }
+        // Função Seta (arrow function) (Anômnima)
+        const calcularMedia2 = (n1, n2, n3, n4) => {
+            return (n1+n2+n3+n4)/4
+        }
+
+        const calcularMedia3 = (n1, n2, n3, n4) => (n1+n2+n3+n4)/4
+
+
+        const negativoOuPositivo = function (numero){
+            if (numero > 0){
+                return "Positivo"
+            }else if (numero < 0){
+                return "Negativo"
+            }else{
+                return "Zero"
+            }
+        }
+
+        // alert(negativoOuPositivo(-5)) // negativo
+        // alert(negativoOuPositivo(7)) // positivo
+
+
+        const parOuImpar = (numero) => {
+            if(numero%2 == 0){
+                return "par"
+            }else if (numero%2 == 1){
+                return "Impar"
+            }
+        }
+
+        // alert(parOuImpar(7)) // Impar
+        // alert(parOuImpar(4)) // Par
+
+
+        const parOuImparOpTernario = (numero) => {
+            return numero%2 == 0 ? "par" : 'Impar'
+        }
+
+        // alert(parOuImparOpTernario(7))
+
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>variáveis js</title>
+    <title>Tipo String</title>
 </head>
 <body>
     <script>
-        const nome = 'juliana'
+        const nome = 'Juliana'
 
-        const cumprimento = "Nosso lema é 'estudar bastante!'"
+        const cumprimento = 'Nosso lema é "estudar bastante!"'
+        const cumprimento2 = "Nosso lema é 'estudar bastante!'"
+        const cumprimento3 = `"Nosso lema é 'estudar bastante!'"`
 
-        console.log("Meu nome é " + nome)
+        const cumprimento4 = `
+        =================================== 
+               Olá, ${nome.toLowerCase()}
+
+               Seja bem vindo(a) !
+        ====================================`
 
 
-        const comprimento4 = `         
-        ==============================
-            ola, ${nome.toLocaleLowerCase()}
+        console.log("Meu nome é " + nome) //Concatenação
 
-            seja bem vindo(a)
-        
-        ================================ `
+        alert(cumprimento4)
 
-        alert(comprimento4)
-        
-        
-       
     </script>
+
 </body>
 </html>

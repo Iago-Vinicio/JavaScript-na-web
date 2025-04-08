@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>variáveis js</title>
+    <title>Escopo</title>
 </head>
 <body>
+
     <script>
-        if (1 > 0) {
-            let estudante = "Caroline"
-            console.log(estudante)
-            
+        // Escopo Global
+        if (1 > 0){
+            // Escopo Local
+            let estudante = 'Caroline'
+            console.log(estudante) // Caroline
         }
-        estudante = 'ana'
-        console.log(estudante)
+        professora = "Ana"
+        console.log(professora)// Caroline
+
+
     </script>
+
 </body>
 </html>
