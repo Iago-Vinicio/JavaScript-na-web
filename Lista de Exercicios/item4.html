@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Java</title>
+</head>
+<body>
+    <script>
+        function altentificacaoSexo(escolha) {
+        
+           switch (escolha.toLowerCase()) {
+            case "f":
+                return "Sexo altenticado !"
+                break;
+            case "m":
+                return "Sexo altenticado !"
+                break
+            default:
+                return "Sexo invalido !"
+                break;
+           }
+        }
+
+        let escolha = prompt(` 
+        Digite:
+         F - Feminino
+         M - Masculino
+        `)
+        alert(altentificacaoSexo(escolha))
+    </script>
+</body>
+</html>
